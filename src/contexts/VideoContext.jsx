@@ -10,7 +10,7 @@ export const VideoProvider = ({ children }) => {
 
     const fetchVideos = async () => {
         try {
-            const response = await fetch('http://localhost:3000/videos');
+            const response = await fetch('https://669720b202f3150fb66cb07d.mockapi.io/AluraFlix/videos');
             const data = await response.json();
             setVideos(data);
         } catch (error) {
